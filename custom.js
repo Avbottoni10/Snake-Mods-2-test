@@ -298,9 +298,9 @@ window.snake.more_menu = function() {
                     : ${Apple_Count_Thing} === 4
                       ? 40
                     : ${Apple_Count_Thing} === 5
-                      ? 100
+                      ? 500
                     : ${Apple_Count_Thing} === 6
-                      ? 0
+                      ? 100
                     : ${Apple_Count_Thing} === 7
                       ? 0
                     : 0
