@@ -195,7 +195,7 @@ window.snake.more_menu = function() {
         functio.replace(
           `if(c=${inevilmodes})`,
           `
-          if(${Apple_Count_Thing} > 2) {
+          if(${Apple_Count_Thing} > 200) {
             if(!(${inevilmodes})) {
               if(${Apple_Count_Thing} === 3) {
                 ${Place_The_Apple_Maybe} 1, 2));
@@ -265,11 +265,11 @@ window.snake.more_menu = function() {
                 for (i=-7;i<3;i++) {
                   ${Place_The_Apple_Maybe} i, 4));
                 }
-              } else if(${Apple_Count_Thing} === 6) {
+              } else if(${Apple_Count_Thing} === 60) {
                 for (i=0;i<200;i++) {
                   ${Place_The_Apple_Maybe} -1, 0));
                 }
-              } else if(${Apple_Count_Thing} === 7) {
+              } else if(${Apple_Count_Thing} === 70) {
                   for (i=0;i<10000;i++) {
                     ${Place_The_Apple_Maybe} -1, 0));
                   }
@@ -279,15 +279,15 @@ window.snake.more_menu = function() {
               if(${Apple_Count_Thing} < 6)
                 for(
                   let i = 0; i < (
-                    ${Apple_Count_Thing} === 3
+                    ${Apple_Count_Thing} === 30
                       ? 13
-                    : ${Apple_Count_Thing} === 4
+                    : ${Apple_Count_Thing} === 40
                       ? 40
-                    : ${Apple_Count_Thing} === 5
+                    : ${Apple_Count_Thing} === 50
                       ? 100
-                    : ${Apple_Count_Thing} === 6
+                    : ${Apple_Count_Thing} === 60
                       ? 0
-                    : ${Apple_Count_Thing} === 7
+                    : ${Apple_Count_Thing} === 70
                       ? 0
                     : 0
                   ); i++
@@ -322,7 +322,7 @@ window.snake.more_menu = function() {
                 }
               else {
                 for(let i = 0; i < (
-                  ${Apple_Count_Thing} === 6
+                  ${Apple_Count_Thing} === 60
                     ? 200
                   : 20000
                 ); i++)
